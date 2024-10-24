@@ -285,7 +285,7 @@ p {
     padding-top: 10px;
 }
 
-.farm_info p{
+.farm_info  ul:nth-child(1) p{
     text-align: left;
 }
 
@@ -316,7 +316,7 @@ p {
     margin-top: 60px;
 }
 
-.factory_info P{
+.factory_info  ul:nth-child(1) P{
     text-align: left;
 }
 
