@@ -1,0 +1,562 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #27357C;
+}
+
+body {
+    min-width: 1320px;
+    font-family: 'ONE-Mobile-POP';
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+.top_background {
+    background: url(../images/sub_header_background.png)no-repeat 50% 0;
+    background-size: cover;
+}
+
+
+
+
+header {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.main_logo {
+    display: block;
+}
+
+.header_right {
+    display: flex;
+    gap: 10px;
+}
+
+.hs {
+    transition: 0.3s;
+}
+
+.hs img {
+    width: 44px;
+    height: 44px;
+}
+
+.hs:hover {
+    transform: scale(1.2);
+}
+
+
+.search {
+    padding-left: 50px;
+    height: 44px;
+    width: 288px;
+    border-radius: 50px;
+    border: #27357C 5px solid;
+    background: url(../images/search_icon.png) no-repeat white 2% 50%;
+    font-size: 20px;
+    font-family: 'NanumSquareRound';
+    outline: none;
+}
+
+.nav {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    z-index: 2;
+}
+
+.nav>li>a {
+    display: block;
+    text-align: center;
+    width: 157px;
+    padding: 30px 0;
+    font-size: 29px;
+    background: url(../images/nav_cloud.png) no-repeat 0 50%;
+    transition: 0.5s;
+    position: relative;
+    z-index: 2;
+}
+
+.nav li {
+    position: relative;
+}
+
+
+.nav>li:hover>a {
+    transform: translateY(-25px);
+    color: #ff9ab0;
+}
+
+
+
+.sub {
+    font-size: 29px;
+    text-align: center;
+    background: url(../images/nav_long.png) no-repeat 0 20px;
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    padding: 70px 0px 10px;
+    display: none;
+    z-index: 1;
+}
+
+.sub a {
+    transform: translateY(-25px);
+    display: block;
+    padding-bottom: 5px;
+}
+
+.sub2 a {
+    transform: translateY(-25px);
+    display: block;
+    padding-top: 10px;
+}
+
+.sub2 {
+    font-size: 29px;
+    text-align: center;
+    background: url(../images/nav_long2.png) no-repeat 0 20px;
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    padding: 60px 0px 10px;
+    display: none;
+    z-index: 1;
+}
+
+.sub li a:hover {
+    color: #ff9ab0;
+}
+
+.sub2 li a:hover {
+    color: #ff9ab0;
+}
+
+/* 탑 버튼 */
+.top {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.top:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+/* 컨텐츠 */
+
+/* 회사배너 */
+.company img {
+    width: 100%;
+    display: block;
+}
+
+
+
+/* 브랜드 소개 */
+
+.info {
+    background-color: #D2EAFF;
+    padding-bottom: 100px;
+}
+
+.info_in {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.brand_button {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand_button a {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 45px;
+    background-color: #27357C;
+    color: white;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.brand_button li:hover a {
+    color: #ff9ab0;
+    transform: scale(1.2);
+}
+
+
+
+/* 브랜드 소개 */
+.info_in h1 {
+    color: #27357C;
+    font-size: 50px;
+    background: url(../images/milk_splash_background.png) no-repeat 50% 50%;
+
+    padding: 100px 40px;
+}
+
+.brand_info img {
+    display: block;
+}
+
+.brand_info ul {
+    display: flex;
+    gap: 100px;
+    color: #27357C;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.brand_info ul li {
+    overflow: hidden;
+}
+
+
+.brand_info ul li h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.brand_info ul li p {
+    font-size: 30px;
+}
+
+
+/* 로고 소개 */
+.logo_info {
+    background-color: white;
+    border-radius: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.logo_info ul:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.logo_info ul:nth-child(1) img {
+    display: block;
+}
+
+.logo_info ul:nth-child(1) p {
+    font-family: 'NanumSquareRound';
+    font-size: 23px;
+    color: #27357C;
+    font-weight: bold;
+}
+
+.logo_info ul:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+    color: #27357C;
+    font-size: 23px;
+    font-family: 'NanumSquareRound';
+    font-weight: bold;
+}
+
+.logo_info ul:nth-child(2) img {
+    display: block;
+    padding-bottom: 20px;
+}
+
+
+/* 로고 색상 */
+
+.logo_color {
+    background-color: white;
+    display: flex;
+    margin-bottom: 100px;
+    padding: 50px;
+    border-radius: 50px;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    color: #27357C;
+    overflow: hidden;
+}
+
+.logo_color img {
+    display: block;
+}
+
+.logo_color ul:nth-child(1) {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    font-family: 'NanumSquareRound';
+    font-weight: 600;
+}
+
+.logo_color ul:nth-child(2) li {
+    display: flex;
+    font-family: 'NanumSquareRound';
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+
+.logo_color ul:nth-child(2) li img {
+    padding-right: 20px;
+}
+
+.logo_color ul:nth-child(2) li p{
+    padding-top: 10px;
+}
+
+/* 마스코트 */
+
+.mascot {
+    background-color: #7BBAF1;
+    padding-bottom: 200px;
+}
+
+.mascot_in {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.mascot_in h1 {
+    color: #27357C;
+    font-size: 50px;
+    background: url(../images/milk_splash_background.png) no-repeat 50% 50%;
+
+    padding: 100px 40px;
+}
+
+
+
+
+.moomoo {
+    background-color: white;
+    border-radius: 50px;
+    padding: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: 'NanumSquareRound';
+    color: #27357C;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+
+.moomoo ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.moomoo ul li:nth-child(1) ul li:nth-child(1) {
+    padding-top: 20px;
+}
+
+.moomoo ul li:nth-child(1) ul li:nth-child(2) p {
+    padding-top: 10px;
+}
+
+.moomoo ul li:nth-child(1) ul li:nth-child(3) p {
+    padding-top: 23px;
+}
+
+
+
+.moomoo_box {
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.moomoo_box h2 {
+    font-size: 55px;
+    color: #27357C;
+}
+
+.moomoo_box p {
+    background-color: #27357C;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'NanumSquareRound';
+    border-radius: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.farmi {
+    background-color: white;
+    border-radius: 50px;
+    padding: 50px;
+    font-family: 'NanumSquareRound';
+    text-align: center;
+    color: #27357C;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+
+.farmi ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.farmi ul li:nth-child(2) ul li:nth-child(1) p {
+    padding-top: 20px;
+}
+
+.farmi ul li:nth-child(2) ul li:nth-child(2) p {
+    padding-top: 10px;
+}
+
+
+
+.farmi_box {
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.farmi_box h2 {
+    font-size: 55px;
+    color: #27357C;
+}
+
+.farmi_box p {
+    background-color: #27357C;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'NanumSquareRound';
+    border-radius: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* 푸터 */
+
+
+footer {
+    background-color: #27357C;
+}
+
+.footer {
+    font-size: 17px;
+    padding: 50px 0;
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer_menu {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.footer ul li {
+    color: white;
+}
+
+.footer ul a {
+    color: white;
+}
+
+.footer ul a:hover {
+    color: #ff9ab0;
+}
+
+.footer p {
+    color: white;
+    font-family: 'NanumSquareRound';
+}
+
+
+
+.footer_sns {
+    display: flex;
+    gap: 10px;
+}
+
+.footer_sns img {
+    display: block;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+
+.footer_sns img:hover {
+    transform: scale(1.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
