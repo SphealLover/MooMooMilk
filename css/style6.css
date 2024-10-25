@@ -227,7 +227,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     top: 310px;
-    width: 800px;
+    width: 100%;
     transition: 0.5s;
 }
 
